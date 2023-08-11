@@ -4,9 +4,6 @@ const nextConfig = {
     appDir: true,
     serverComponentsExternalPackages: ['bcrypt'],
   },
-  typeScript: {
-    ignoreBuildErrors: true,
-  },
 }
 
 module.exports = nextConfig
