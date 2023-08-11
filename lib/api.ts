@@ -26,3 +26,11 @@ export const fetcher = async ({url, method, body, json = true}) => {
   export const signin = (user) => {
     return fetcher({url: '/api/signin', method: 'post', body: user})
   }
+
+  export const createNewProject = (name) => {
+    return fetcher({
+      url: "/api/project",
+      method: "POST",
+      body: { name },
+    });
+  };
